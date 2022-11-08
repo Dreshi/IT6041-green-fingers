@@ -36,6 +36,7 @@ export const Card = styled.div`
 `;
 
 export const CardInfo = styled.div`
+  width: 100%;
   width: 50%;
   div {
     display: flex;
@@ -55,8 +56,23 @@ export const EmptyStyle = styled.div`
   justify-content: center;
   height: 100%;
   width: 100%;
+  h1 {
+    font-size: 2rem;
+    padding: 2rem;
+  }
   svg {
-    font-size: 8rem;
+    font-size: 4rem;
     color: var(--secondary);
+  }
+`;
+
+export const Checkout = styled.div`
+  button {
+    background: var(--primary);
+    padding: 1rem 2rem;
+    width: 100%;
+    color: white;
+    margin: 2rem;
+    cursor: pointer;
   }
 `;
