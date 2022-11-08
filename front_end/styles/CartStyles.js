@@ -72,7 +72,9 @@ export const Checkout = styled.div`
     padding: 1rem 2rem;
     width: 100%;
     color: white;
-    margin: 2rem;
+    margin-top: 2rem;
+    border: none;
+    /* border-radius: 1rem; */
     cursor: pointer;
   }
 `;
