@@ -9,5 +9,5 @@ const getStripe = async () => {
     return stripe;
 };
 
-export default getStripe();
+export default getStripe;
 
