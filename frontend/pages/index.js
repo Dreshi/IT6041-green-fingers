@@ -1,14 +1,12 @@
 import Head from 'next/head';
 import { useQuery } from 'urql';
 import { PRODUCT_QUERY } from "../lib/query";
-import Product from '../components/Products';
 import { Gallery } from '../styles/Gallery';
 import { MeiliSearch } from 'meilisearch';
 import { useEffect, useState } from "react";
 import { ProductStyles } from "../styles/ProductStyle";
 import Link from "next/link";
 import Image from 'next/image';
-import { buildUrl } from 'cloudinary-build-url';
 
 const searchClient = new MeiliSearch({
   host: `${ process.env.NEXT_PUBLIC_MEILISEARCH_HOST }`,
