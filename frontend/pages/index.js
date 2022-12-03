@@ -38,12 +38,6 @@ export default function Home() {
   if(error) return <p>Oh no...{error.message}</p>;
   const products = data.products.data;
   console.log(items);
-  
-  const url = buildUrl(`https://res.cloudinary.com/dksqsotmc/image/upload/`, {
-    cloud: {
-      cloudName: 'dksqsotmc',
-    },
-  });    
 
   return (
     <div>
@@ -67,7 +61,7 @@ export default function Home() {
           <ProductStyles>
             <Link href={`product/${product.slug}`}>
               <Image 
-              src={url}
+              src={product.image.url}
               alt={product.title}
               width={100}
               height={100}
