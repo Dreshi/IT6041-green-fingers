@@ -8,7 +8,7 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
@@ -19,24 +19,26 @@
     },
     "description": {
       "type": "text",
-      "required": true
+      "required": true,
+      "unique": true
     },
-    "image": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false,
-      "required": true
+    "price": {
+      "type": "float",
+      "required": true,
+      "unique": false
     },
     "slug": {
       "type": "uid",
       "targetField": "title",
       "required": true
     },
-    "price": {
-      "type": "decimal",
-      "required": true
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }
