@@ -11,7 +11,7 @@ import Image from 'next/image';
 import { buildUrl } from 'cloudinary-build-url';
 
 const searchClient = new MeiliSearch({
-  host: 'http://localhost:7700/',
+  host: `${ process.env.NEXT_PUBLIC_MEILISEARCH_HOST }`,
   apiKey: '', // Use the public key not the private or master key to search.
 })
 
