@@ -30,8 +30,6 @@ const cards = {
     }
 }
 
-
-
 export default function Cart(){
     const { cartItems, setShowCart, onAdd, onRemove, totalPrice } = useStateContext();
 
@@ -42,7 +40,7 @@ export default function Cart(){
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(cartItems)
-        });
+        });        
         const data = await response.json();
         await stripe.redirectToCheckout({sessionId: data.id});
     };
