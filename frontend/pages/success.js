@@ -8,13 +8,13 @@ export async function getServerSideProps(params){
     const order = await stripe.checkout.sessions.retrieve(
         params.query.session_id,
         {
-            expand: ["line-items"],
+            expand: ["line_items"],
         }
     );
     return {props: { order }};
 }
 
-export default function Success( order ){
+export default function Success( {order} ){
     const route = useRouter()
     return(
         <Wrapper>
