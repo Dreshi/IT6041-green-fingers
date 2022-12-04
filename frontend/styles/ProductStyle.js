@@ -5,7 +5,7 @@ export const ProductStyles = styled.div`
     position: relative;
     
     flex-direction: column;
-    padding: 1.5rem 1.2rem 1.2rem 1.2rem;
+    padding: 1.6rem;
     img {
         width: 100%;
         cursor: pointer;
@@ -50,8 +50,8 @@ export const ProductStyles = styled.div`
       .text {
         background: #665A48;
         color: white;
-        font-size: 1rem;
-        padding: 12px 28px;
+        font-size: 16px;
+        padding: 16px 32px;
       }
 
       

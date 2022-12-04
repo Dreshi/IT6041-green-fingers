@@ -70,6 +70,7 @@ export const Checkout = styled(motion.div)`
         padding: 1rem 2rem;
         width: 100%;
         color: white;
+        font-size: 1.3rem;
         margin-top: 2rem;
         cursor: pointer;
         border: none;
