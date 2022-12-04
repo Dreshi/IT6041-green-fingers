@@ -72,7 +72,7 @@ export default function Cart(){
                     cartItems.map((item) => {
                         return (
                             <Card layout variants={card} key={item.slug}>
-                                <img src={item.image.data.attributes.formats.thumbnail.url} alt={item.title} />
+                                <img src={item.image.data.attributes.formats.thumbnail.url} alt={item.title} className="cart-img"/>
                                 <CardInfo>
                                     <h3>{item.title}</h3>
                                     <h3>${item.price}</h3>

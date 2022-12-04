@@ -1,9 +1,11 @@
 import Link from "next/link";
+import Image from "next/image";
 import { FiShoppingBag } from "react-icons/fi";
 import { NavStyles, NavItems } from "../styles/NavStyles";
 import Cart from "./Cart";
 import { useStateContext } from "../lib/context";
 import User from "./User";
+import logo from "../public/greenfingers.png";
 import { useUser } from "@auth0/nextjs-auth0";
 
 const { AnimatePresence, motion } = require("framer-motion");
@@ -13,7 +15,7 @@ export default function Nav() {
     const { user, error, isLoading } = useUser();
     return (
     <NavStyles>
-        <Link href={"/"}>EcoWorld</Link>
+        <Link href={"/"}><Image src={logo} alt="greenlogo" width={220}/></Link>
         <NavItems>
             <User />
             <div onClick={() => setShowCart(true)}>
