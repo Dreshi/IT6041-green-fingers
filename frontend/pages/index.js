@@ -10,7 +10,7 @@ import Image from 'next/image';
 
 const searchClient = new MeiliSearch({
   host: `${ process.env.NEXT_PUBLIC_MEILISEARCH_HOST }`,
-  apiKey: '', // Use the public key not the private or master key to search.
+  apiKey: `${ process.env.NEXT_PUBLIC_MEILI_APIKEY }`, // Use the public key not the private or master key to search.
 })
 
 export default function Home() {
@@ -59,7 +59,7 @@ export default function Home() {
           <ProductStyles>
             <Link href={`product/${product.slug}`}>
               <Image 
-              src={product.image.url}
+              src={product.image.data.attributes.formats.medium.url}
               alt={product.title}
               width={100}
               height={100}

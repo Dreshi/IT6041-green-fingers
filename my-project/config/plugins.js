@@ -5,7 +5,7 @@ module.exports = ({ env }) => ({
         // Your meili host
         host: "http://localhost:7700",
         // Your master key or private key
-        apiKey: "",
+        apiKey: env('MEILI_MASTER_KEY'),
       }
     },
     upload: {
