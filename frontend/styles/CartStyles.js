@@ -15,7 +15,7 @@ export const CartWrapper = styled(motion.div)`
 `;
 
 export const CartStyle = styled(motion.div)`
-    width: 30%;
+    width: 40%;
     background: #f1f1f1;
     padding: 2rem 5rem;
     overflow-y: scroll;
@@ -25,7 +25,7 @@ export const CartStyle = styled(motion.div)`
 export const Card = styled(motion.div)`
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     border-radius: 1rem;
     overflow: hidden;
     background: white;
@@ -37,7 +37,7 @@ export const Card = styled(motion.div)`
 `;
 
 export const CardInfo = styled(motion.div)`
-    width: 50%;
+    width: 80%;
     div {
         display: flex;
         flex-direction: space-between;
@@ -70,9 +70,12 @@ export const Checkout = styled(motion.div)`
         padding: 1rem 2rem;
         width: 100%;
         color: white;
+        font-size: 1.3rem;
         margin-top: 2rem;
         cursor: pointer;
         border: none;
+    cursor: pointer;
+
     }
 `;
 

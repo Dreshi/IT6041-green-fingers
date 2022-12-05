@@ -5,17 +5,26 @@ export const DetailsStyle = styled.div`
     justify-content: space-between;
     margin-top: 5rem;
     img {
-        width: 40%;
+        width: 50%;
     }
 `;
 
 export const ProductInfo = styled.div`
     width: 40%;
     button {
-        font-size: 1rem;
+        font-size: 1.2rem;
         font-weight: medium;
-        padding: 0.5rem 1rem;
+        padding: 0.8rem 1rem;
         cursor: pointer;
+    border-color: #9F8772;
+
+    }
+
+    h3 {
+        font-size: 1.6rem;
+        margin: 0.8rem 0.8rem 1rem 0;
+
+        
     }
 `;
 
@@ -37,6 +46,7 @@ export const Quantity = styled.div`
     }
     span {
         color: var(--secondary);
+        
     }
     svg {
         color: #494949;
@@ -45,7 +55,10 @@ export const Quantity = styled.div`
 
 export const Buy = styled.button`
     width: 100%;
-    background: var(--primary);
+    background: #665A48;
     color: white;
     font-weight: 500;
+    margin: 2rem 0 0 0;
+  
+    
 `;

@@ -28,7 +28,8 @@ export const NavItems = styled.div`
         padding: 0.25rem;
     }
     svg {
-        font-size: 1.5rem;
+        font-size: 2.3rem;
+        color: #5F7161;
     }
     span {
         background: #ff2626;

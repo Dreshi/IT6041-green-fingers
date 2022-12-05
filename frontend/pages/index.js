@@ -4,9 +4,11 @@ import { PRODUCT_QUERY } from "../lib/query";
 import { Gallery } from '../styles/Gallery';
 import { MeiliSearch } from 'meilisearch';
 import { useEffect, useState } from "react";
-import { ProductStyles } from "../styles/ProductStyle";
+import { ProductStyles , ProgressBarStyles } from "../styles/ProductStyle";
 import Link from "next/link";
 import Image from 'next/image';
+const {  motion , useScroll} = require("framer-motion");
+
 
 const searchClient = new MeiliSearch({
   host: `${ process.env.NEXT_PUBLIC_MEILISEARCH_HOST }`,
@@ -19,6 +21,8 @@ export default function Home() {
   const {data, fetching, error} = results;
   const [items, setItems] = useState([]);
   const [search, setSearch] = useState("");
+  const { scrollYProgress, scrollRef } = useScroll();
+  
 
   useEffect(() => {
     //search product index based on search value
@@ -46,28 +50,45 @@ export default function Home() {
       </Head>
       <main>
         <div className="App">
+          <ProgressBarStyles>
+              <motion.div
+                className="progress-bar "
+                style={{ scaleX: scrollYProgress }}
+                whileInView={{ opacity: 0.6 }}
+              />
+           
           <div className="search">
             <input
               type="text"
               value={search}
-              onChange={(e) => setSearch(e.target.value)}
+              placeholder="Search..."
+                onChange={(e) => setSearch(e.target.value)}
+                className="search2"
             />
             </div>
+            </ProgressBarStyles>
         </div>
         <Gallery>
           {items.map((product) => (
           <ProductStyles>
-            <Link href={`product/${product.slug}`}>
+              <Link href={`product/${product.slug}`}>
+                
+                <motion.div whileHover={{ scale: 1.1 }} className="container">
               <Image 
               src={product.image.data.attributes.formats.medium.url}
               alt={product.title}
-              width={100}
-              height={100}
-              unoptimized={true}
-              />
+              width={200}
+              height={200}
+                    unoptimized={true}
+                    className="image"
+                  />
+                  <div class="middle">
+    <div class="text">Add to Cart</div>
+  </div>
+                  </motion.div>
             </Link>
             <h2>{product.title}</h2>
-            <h3>{product.price}</h3>
+            <h3>$ {product.price}</h3>
           </ProductStyles>
           ))}
         </Gallery>
