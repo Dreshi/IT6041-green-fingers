@@ -1,0 +1,408 @@
+[33mcommit c7154504f13a4e09bac545161bf3adc675515303[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 5d5e3ad 0b10ebb
+Author: Crystal C <crystalcx01@gmail.com>
+Date:   Mon Dec 5 13:42:13 2022 +1300
+
+    Merge pull request #9 from Dreshi/styling
+    
+    Styling
+
+[33mcommit 0b10ebb9401cfd54aac538dcafc032b3d2a8273d[m[33m ([m[1;31morigin/styling[m[33m)[m
+Author: ppc99999 <ppc99999@gmail.com>
+Date:   Mon Dec 5 06:39:04 2022 +1300
+
+     font size
+
+ frontend/styles/CartStyles.js   | 1 [32m+[m
+ frontend/styles/Gallery.js      | 2 [32m+[m[31m-[m
+ frontend/styles/ProductStyle.js | 6 [32m+++[m[31m---[m
+ 3 files changed, 5 insertions(+), 4 deletions(-)
+
+[33mcommit ddf28bf1ae2e2f47f251969645d2780aba7cf488[m
+Author: ppc99999 <ppc99999@gmail.com>
+Date:   Mon Dec 5 06:00:35 2022 +1300
+
+    stlying index
+
+ frontend/styles/Gallery.js      | 2 [32m+[m[31m-[m
+ frontend/styles/ProductStyle.js | 6 [32m+++[m[31m---[m
+ 2 files changed, 4 insertions(+), 4 deletions(-)
+
+[33mcommit 771dc4c605834e9ac22972f483e8a35ddedc4fd4[m
+Author: ppc99999 <ppc99999@gmail.com>
+Date:   Mon Dec 5 05:50:18 2022 +1300
+
+    stlying
+
+ frontend/components/Cart.js       |   2 [32m+[m[31m-[m
+ frontend/components/Nav.js        |   4 [32m+[m[31m-[m
+ frontend/package-lock.json        |  50 [32m++++[m[31m---------------------[m
+ frontend/package.json             |   2 [32m+[m[31m-[m
+ frontend/pages/index.js           |  37 [32m++++++++++++++[m[31m----[m
+ frontend/public/greenfingers.png  | Bin [31m0[m -> [32m46620[m bytes
+ frontend/styles/CartStyles.js     |   8 [32m++[m[31m--[m
+ frontend/styles/Gallery.js        |   2 [32m+[m[31m-[m
+ frontend/styles/NavStyles.js      |   3 [32m+[m[31m-[m
+ frontend/styles/ProductDetails.js |  21 [32m+++++++++[m[31m--[m
+ frontend/styles/ProductStyle.js   |  77 [32m+++++++++++++++++++++++++++++++++++[m[31m---[m
+ frontend/styles/globals.css       |   7 [32m+++[m[31m-[m
+ 12 files changed, 143 insertions(+), 70 deletions(-)
+
+[33mcommit 5d5e3adba21e0fe0297b3140c67751d888b50685[m
+Merge: 5c4bb17 528887e
+Author: ztur211 <79612169+ztur211@users.noreply.github.com>
+Date:   Sun Dec 4 22:12:26 2022 +1300
+
+    Merge pull request #8 from Dreshi/update-search
+    
+    fixed invalid_request_error
+
+[33mcommit 528887e73848e70b65e31cfef75a788c0fe49784[m
+Author: ztur211 <ztur211@mywhitecliffe.com>
+Date:   Sun Dec 4 22:08:51 2022 +1300
+
+    fixed invalid_request_error
+
+ frontend/components/Cart.js | 4 [32m+[m[31m---[m
+ frontend/pages/success.js   | 4 [32m++[m[31m--[m
+ 2 files changed, 3 insertions(+), 5 deletions(-)
+
+[33mcommit 5c4bb17d0f72e26431540024a19f9c6c4f91384d[m
+Merge: 9f2380f d517a7a
+Author: ztur211 <79612169+ztur211@users.noreply.github.com>
+Date:   Sun Dec 4 17:02:12 2022 +1300
+
+    Merge pull request #7 from Dreshi/update-search
+    
+    Added connection to AWS
+
+[33mcommit d517a7adfa57d470d900de6529b1bd50d3000718[m
+Author: ztur211 <ztur211@mywhitecliffe.com>
+Date:   Sun Dec 4 16:53:23 2022 +1300
+
+    amend index.js to connect to aws instance
+
+ frontend/package-lock.json             |  788 [32m+[m[31m----------[m
+ frontend/package.json                  |    7 [32m+[m[31m-[m
+ frontend/pages/index.js                |    4 [32m+[m[31m-[m
+ my-project/config/middlewares.js       |   14 [31m-[m
+ my-project/config/plugins.js           |    2 [32m+[m[31m-[m
+ my-project/package-lock.json           | 2239 [32m++++++++++++++++[m[31m----------------[m
+ my-project/package.json                |    8 [32m+[m[31m-[m
+ my-project/src/admin/webpack.config.js |    9 [32m+[m
+ my-project/yarn.lock                   | 1883 [32m+++++++++++++++++[m[31m----------[m
+ 9 files changed, 2278 insertions(+), 2676 deletions(-)
+
+[33mcommit b0a042652dfb5584206431a02f722117485edf9c[m
+Author: ztur211 <ztur211@mywhitecliffe.com>
+Date:   Sat Dec 3 23:40:36 2022 +1300
+
+    removed unused code in index.js
+
+ frontend/pages/index.js | 2 [31m--[m
+ 1 file changed, 2 deletions(-)
+
+[33mcommit 9f2380f24f184df02b21fbf134a82cce6f0f11de[m
+Merge: 664ff43 b82e2f8
+Author: ztur211 <79612169+ztur211@users.noreply.github.com>
+Date:   Sat Dec 3 21:22:02 2022 +1300
+
+    Merge pull request #6 from Dreshi/update-search
+    
+    Update index.js
+
+[33mcommit b82e2f84e9db284f5d6984384ba11c9a7bb2ec43[m
+Author: ztur211 <ztur211@mywhitecliffe.com>
+Date:   Sat Dec 3 20:25:14 2022 +1300
+
+    Update index.js
+
+ frontend/pages/index.js | 8 [32m+[m[31m-------[m
+ 1 file changed, 1 insertion(+), 7 deletions(-)
+
+[33mcommit 664ff434176648dbbb399e7efdead6da5fb8a436[m
+Author: ztur211 <ztur211@mywhitecliffe.com>
+Date:   Sat Dec 3 19:48:52 2022 +1300
+
+    added meilisearch host to .env
+
+ frontend/pages/index.js | 2 [32m+[m[31m-[m
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+[33mcommit 880c32d352e082bfdb7eda791b59c6bb3fb1235c[m
+Author: ztur211 <ztur211@mywhitecliffe.com>
+Date:   Sat Dec 3 18:11:53 2022 +1300
+
+    fixed getStripe.js
+
+ frontend/lib/getStripe.js | 13 [31m-------------[m
+ 1 file changed, 13 deletions(-)
+
+[33mcommit 482498ca722ae4440a94da16fef1ef824be95154[m
+Merge: d44b38f b32be9e
+Author: ztur211 <79612169+ztur211@users.noreply.github.com>
+Date:   Sat Dec 3 18:07:49 2022 +1300
+
+    Merge pull request #5 from Dreshi/search
+    
+    meilisearch search
+
+[33mcommit b32be9e466351a61e19e1adabdfcf3de0de0ac64[m
+Merge: 35badb9 d44b38f
+Author: ztur211 <ztur211@mywhitecliffe.com>
+Date:   Sat Dec 3 18:06:51 2022 +1300
+
+    Merge branch 'main' into search
+
+[33mcommit 35badb9ce876b67d368aa4b2748d60cd79ddd06d[m
+Author: ztur211 <ztur211@mywhitecliffe.com>
+Date:   Sat Dec 3 17:33:46 2022 +1300
+
+    change gitignore
+
+ frontend/.gitignore   | 3 [32m+++[m
+ my-project/.gitignore | 4 [32m++++[m
+ 2 files changed, 7 insertions(+)
+
+[33mcommit 6dcffe4e504c8bca305189ca4d2d39c409bc6cbb[m
+Author: ztur211 <ztur211@mywhitecliffe.com>
+Date:   Fri Dec 2 11:14:31 2022 +1300
+
+    meilisearch search
+
+ front_end/.eslintrc.json                           |     3 [31m-[m
+ front_end/components/Cart.js                       |    96 [31m-[m
+ front_end/components/Nav.js                        |    27 [31m-[m
+ front_end/components/Products.js                   |    19 [31m-[m
+ front_end/lib/context.js                           |    91 [31m-[m
+ front_end/next.config.js                           |    10 [31m-[m
+ front_end/package-lock.json                        |  6317 [31m----------[m
+ front_end/package.json                             |    25 [31m-[m
+ front_end/pages/_app.js                            |    19 [31m-[m
+ front_end/pages/index.js                           |    32 [31m-[m
+ front_end/pages/product/[slug].js                  |    73 [31m-[m
+ front_end/styles/CartStyles.js                     |    85 [31m-[m
+ front_end/styles/Galery.js                         |     7 [31m-[m
+ front_end/styles/NavStyles.js                      |    47 [31m-[m
+ front_end/styles/ProductDetails.js                 |    49 [31m-[m
+ front_end/styles/ProductStyle.js                   |    16 [31m-[m
+ {front_end => frontend}/.gitignore                 |     0
+ {front_end => frontend}/README.md                  |     0
+ frontend/components/Cart.js                        |   100 [32m+[m
+ frontend/components/Nav.js                         |    32 [32m+[m
+ frontend/components/Products.js                    |    18 [32m+[m
+ frontend/components/User.js                        |    30 [32m+[m
+ frontend/lib/context.js                            |    81 [32m+[m
+ frontend/lib/formatMoney.js                        |    12 [32m+[m
+ frontend/lib/getStripe.js                          |    12 [32m+[m
+ {front_end => frontend}/lib/query.js               |    30 [32m+[m[31m-[m
+ frontend/next.config.js                            |    17 [32m+[m
+ frontend/package-lock.json                         |  4741 [32m++++++++[m
+ frontend/package.json                              |    42 [32m+[m
+ frontend/pages/_app.js                             |    25 [32m+[m
+ frontend/pages/api/auth/[...auth0].js              |     3 [32m+[m
+ frontend/pages/api/stripe.js                       |    95 [32m+[m
+ frontend/pages/index.js                            |    86 [32m+[m
+ frontend/pages/product/[slug].js                   |    68 [32m+[m
+ frontend/pages/product/test.js                     |     7 [32m+[m
+ frontend/pages/profile.js                          |    49 [32m+[m
+ frontend/pages/success.js                          |    97 [32m+[m
+ {front_end => frontend}/public/favicon.ico         |   Bin
+ {front_end => frontend}/public/vercel.svg          |     0
+ frontend/styles/CartStyles.js                      |    81 [32m+[m
+ frontend/styles/Gallery.js                         |     7 [32m+[m
+ frontend/styles/NavStyles.js                       |    48 [32m+[m
+ frontend/styles/ProductDetails.js                  |    51 [32m+[m
+ frontend/styles/ProductStyle.js                    |    17 [32m+[m
+ {front_end => frontend}/styles/globals.css         |    13 [32m+[m[31m-[m
+ my-project/config/middlewares.js                   |    28 [32m+[m[31m-[m
+ my-project/config/plugins.js                       |    38 [32m+[m[31m-[m
+ my-project/package-lock.json                       | 11826 [32m++++++++++[m[31m---------[m
+ my-project/package.json                            |    16 [32m+[m[31m-[m
+ .../api/product/content-types/product/schema.json  |    26 [32m+[m[31m-[m
+ my-project/yarn.lock                               | 11129 [31m-----------------[m
+ 51 files changed, 11784 insertions(+), 23957 deletions(-)
+
+[33mcommit d44b38f8793e9a8438a4355c6f5a72f0c25a2f63[m
+Merge: 60f8209 0e086f1
+Author: dreshi <73090979+Dreshi@users.noreply.github.com>
+Date:   Wed Nov 30 17:01:54 2022 +1300
+
+    Merge pull request #4 from Dreshi/set-up-stripe
+    
+    add success page
+
+[33mcommit 0e086f1bc9fcb256f1424ffa4ed6f1631680162c[m[33m ([m[1;31morigin/set-up-stripe[m[33m)[m
+Author: Dreshi <73090979+Dreshi@users.noreply.github.com>
+Date:   Wed Nov 30 17:00:56 2022 +1300
+
+    add success page
+
+ front_end/pages/api/stripe.js         |   2 [32m+[m[31m-[m
+ front_end/pages/success.js            | 107 [32m++++++++++++++++++++++++++++++++++[m
+ front_end/public/bike_with_basket.png | Bin [31m0[m -> [32m2047420[m bytes
+ front_end/public/dog.png              | Bin [31m0[m -> [32m1004956[m bytes
+ 4 files changed, 108 insertions(+), 1 deletion(-)
+
+[33mcommit 60f820987dbfa4e50b8febcf0f21249147a345bd[m
+Merge: dd2931f 9553995
+Author: dreshi <73090979+Dreshi@users.noreply.github.com>
+Date:   Wed Nov 30 11:00:45 2022 +1300
+
+    Merge pull request #3 from Dreshi/set-up-stripe
+    
+    add shipping and promo code to cart
+
+[33mcommit 9553995e65c1a2f93c3ade27938b5abe71db7840[m
+Author: Dreshi <73090979+Dreshi@users.noreply.github.com>
+Date:   Wed Nov 30 10:59:24 2022 +1300
+
+    add shipping and promo code to cart
+
+ front_end/pages/api/stripe.js | 10 [32m+++++++++[m[31m-[m
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+
+[33mcommit dd2931f3697e071341e8f7ba2ebd0a1c4ed6204a[m
+Merge: d86db9d 9a45cdd
+Author: dreshi <73090979+Dreshi@users.noreply.github.com>
+Date:   Tue Nov 29 17:22:38 2022 +1300
+
+    Merge pull request #2 from Dreshi/set-up-stripe
+    
+    Set up stripe
+
+[33mcommit 9a45cdd0e1da36d2890933b25bb2e18229a74868[m
+Author: Dreshi <73090979+Dreshi@users.noreply.github.com>
+Date:   Tue Nov 29 17:20:05 2022 +1300
+
+    send payment to stripe
+
+ front_end/components/Cart.js  | 25 [32m+++++++++++++[m[31m------------[m
+ front_end/lib/getStripe.js    |  2 [32m+[m[31m-[m
+ front_end/pages/api/stripe.js | 39 [32m+++++++++++++++++++++++++++++++++++++++[m
+ 3 files changed, 53 insertions(+), 13 deletions(-)
+
+[33mcommit 3d3c6ad117f4af4ae5a120bd190a3f6486d6fc24[m
+Author: Dreshi <73090979+Dreshi@users.noreply.github.com>
+Date:   Tue Nov 29 16:07:32 2022 +1300
+
+    initial Stripe set up
+
+ front_end/components/Cart.js  |  15 [32m+++++[m[31m-[m
+ front_end/lib/getStripe.js    |  13 [32m+++++[m
+ front_end/package-lock.json   | 115 [32m+++++++++++++++++++++++++++++++++[m[31m---------[m
+ front_end/package.json        |   3 [32m++[m
+ front_end/pages/api/stripe.js |   0
+ my-project/yarn.lock          |  10 [32m++[m[31m--[m
+ 6 files changed, 127 insertions(+), 29 deletions(-)
+
+[33mcommit d86db9d213007df999a919d98d84fa0576501447[m
+Author: antonKuk <akuk211@mywhitecliffe.com>
+Date:   Sun Nov 20 16:29:16 2022 +1300
+
+    Update database config
+
+ my-project/package-lock.json | 11195 [32m+++++++++++++++++++++[m[31m--------------------[m
+ my-project/package.json      |     1 [32m+[m
+ my-project/yarn.lock         |  1295 [32m+++[m[31m--[m
+ 3 files changed, 6429 insertions(+), 6062 deletions(-)
+
+[33mcommit 8bf0ddb61e41cd12c8dde3a262b1a429a61edc8b[m
+Author: antonKuk <akuk211@mywhitecliffe.com>
+Date:   Sun Nov 20 15:53:57 2022 +1300
+
+    deploying backend
+
+ my-project/.gitignore                        |   1 [32m+[m
+ my-project/config/env/production/database.js |  21 [32m++++[m
+ my-project/config/env/production/server.js   |   5 [32m+[m
+ my-project/package-lock.json                 | 159 [32m++++++++++++++++++++[m[31m-------[m
+ my-project/package.json                      |   3 [32m+[m[31m-[m
+ my-project/yarn.lock                         |  61 [32m++++++[m[31m----[m
+ 6 files changed, 185 insertions(+), 65 deletions(-)
+
+[33mcommit 563adcec1c661bc2651de489155311a6e586c4a9[m
+Author: antonKuk <akuk211@mywhitecliffe.com>
+Date:   Tue Nov 8 20:41:31 2022 +1300
+
+    some initial cart animations
+
+ front_end/components/Cart.js | 6 [32m+++[m[31m---[m
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+[33mcommit fe4cf5a1fbb8bf92909e28e1a785662e679e8406[m
+Author: antonKuk <akuk211@mywhitecliffe.com>
+Date:   Tue Nov 8 20:28:43 2022 +1300
+
+    some initial cart animations
+
+ front_end/components/Cart.js   | 75 [32m+++++++++++++++++++++++++[m[31m-----------------[m
+ front_end/components/Nav.js    | 11 [32m+++++[m[31m--[m
+ front_end/styles/CartStyles.js |  2 [32m++[m
+ 3 files changed, 55 insertions(+), 33 deletions(-)
+
+[33mcommit 0f4b3b1e923b903ec93c071ee262e2ffa8874fa0[m
+Author: antonKuk <akuk211@mywhitecliffe.com>
+Date:   Tue Nov 8 18:40:13 2022 +1300
+
+    some initial cart animations
+
+ front_end/components/Cart.js   |  28 [32m++++[m[31m-[m
+ front_end/package-lock.json    | 249 [32m+++++++++++++++++++++++++++++++++++++++++[m
+ front_end/package.json         |   1 [32m+[m
+ front_end/styles/CartStyles.js |  17 [32m+[m[31m--[m
+ 4 files changed, 284 insertions(+), 11 deletions(-)
+
+[33mcommit e90dd6fea58923800aea6f0244f060460fe55709[m
+Author: antonKuk <akuk211@mywhitecliffe.com>
+Date:   Tue Nov 8 16:21:43 2022 +1300
+
+    finishing cart
+
+ front_end/styles/CartStyles.js | 4 [32m+++[m[31m-[m
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+[33mcommit d29dc61a325ee32701afda6a22481ad3e165db67[m
+Author: antonKuk <akuk211@mywhitecliffe.com>
+Date:   Tue Nov 8 16:07:54 2022 +1300
+
+    finishing cart
+
+ front_end/components/Cart.js       | 37 [32m++++++++++++++++++[m[31m----[m
+ front_end/components/Nav.js        |  7 [32m+++[m[31m--[m
+ front_end/lib/context.js           | 63 [32m+++++++++++++++++++[m[31m-------------------[m
+ front_end/styles/CartStyles.js     | 18 [32m++++++++++[m[31m-[m
+ front_end/styles/NavStyles.js      | 15 [32m+++++++++[m
+ front_end/styles/ProductDetails.js |  1 [32m+[m
+ 6 files changed, 100 insertions(+), 41 deletions(-)
+
+[33mcommit 8d5f4e41f65cbfefa8118abea2b46031755f11b5[m
+Author: antonKuk <akuk211@mywhitecliffe.com>
+Date:   Fri Nov 4 12:05:13 2022 +1300
+
+    front_end
+
+ front-end                          |    1 [31m-[m
+ front_end/.eslintrc.json           |    3 [32m+[m
+ front_end/.gitignore               |   36 [32m+[m
+ front_end/README.md                |   34 [32m+[m
+ front_end/components/Cart.js       |   36 [32m+[m
+ front_end/components/Nav.js        |   19 [32m+[m
+ front_end/components/Products.js   |   19 [32m+[m
+ front_end/lib/context.js           |   92 [32m+[m
+ front_end/lib/query.js             |   43 [32m+[m
+ front_end/next.config.js           |   10 [32m+[m
+ front_end/package-lock.json        | 6068 [32m++++++++++++++++++++++++++++++++++++[m
+ front_end/package.json             |   24 [32m+[m
+ front_end/pages/_app.js            |   19 [32m+[m
+ front_end/pages/index.js           |   32 [32m+[m
+ front_end/pages/product/[slug].js  |   73 [32m+[m
+ front_end/public/favicon.ico       |  Bin [31m0[m -> [32m25931[m bytes
+ front_end/public/vercel.svg        |    4 [32m+[m
+ front_end/styles/CartStyles.js     |   62 [32m+[m
+ front_end/styles/Galery.js         |    7 [32m+[m
+ front_end/styles/NavStyles.js      |   32 [32m+[m
+ front_end/styles/ProductDetails.js |   48 [32m+[m
+ front_end/styles/ProductStyle.js   |   16 [32m+[m
+ front_end/styles/globals.css       |   45 [32m+[m
+ 23 files changed, 6722 insertions(+), 1 deletion(-)
