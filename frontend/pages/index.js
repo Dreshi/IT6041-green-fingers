@@ -10,6 +10,7 @@ import Image from 'next/image';
 const {  motion , useScroll} = require("framer-motion");
 
 
+
 const searchClient = new MeiliSearch({
   host: `${ process.env.NEXT_PUBLIC_MEILISEARCH_HOST }`,
   apiKey: `${ process.env.NEXT_PUBLIC_MEILI_APIKEY }`, // Use the public key not the private or master key to search.

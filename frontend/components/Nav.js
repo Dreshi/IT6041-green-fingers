@@ -14,11 +14,12 @@ export default function Nav() {
     const { showCart, setShowCart, totalQuantities } = useStateContext();
     const { user, error, isLoading } = useUser();
     return (
-    <NavStyles>
-        <Link href={"/"}><Image src={logo} alt="greenlogo" width={220}/></Link>
-        <NavItems>
+        <NavStyles>
+               <Link href={"/"}><Image src={logo} alt="greenlogo" width={220}className="greenlogo" /></Link>
+            <NavItems>
+     
             <User />
-            <div onClick={() => setShowCart(true)}>
+            <div onClick={() => setShowCart(true)} className="navlogo">
                 {totalQuantities > 0 && (
                     <motion.span animate={{scale: 1}} initial={{scale: 0}}>
                         {totalQuantities}
@@ -26,7 +27,8 @@ export default function Nav() {
                     )}
                 <FiShoppingBag />
                 <h3>Cart</h3>
-            </div>
+                    </div>
+                  
         </NavItems>
         <AnimatePresence>{showCart && <Cart />}</AnimatePresence>
     </NavStyles>

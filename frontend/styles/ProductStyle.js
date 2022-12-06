@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ProductStyles = styled.div`
     background-color: #F2F2F2 ;
     position: relative;
-    
+
     flex-direction: column;
     padding: 1.6rem;
     img {
@@ -53,7 +53,15 @@ export const ProductStyles = styled.div`
         font-size: 16px;
         padding: 16px 32px;
       }
-
+      // // @media (max-width: 768px) {
+      //   background-color: red;
+      // }
+  
+      @media screen and (max-width: 650px) {
+        
+        
+      }
+  
       
 `;
 
@@ -75,10 +83,36 @@ export const ProgressBarStyles = styled.div`
   }
   .search2 {
     padding: 0.5rem 15% 0.5rem 0.2rem;
-    font-size: 1.1rem
+    font-size: 1.1rem 
+  }
 
+
+  @media screen and (max-width: 450px) {
+ 
+  .search2 {
+    padding: 0.5rem 40% 0.5rem 0.2rem;
+  }
+
+  }
+
+
+  @media screen and (min-width: 451px) {
+  
+  .search2 {
+    padding: 0.5rem 45% 0.5rem 0.2rem;
+    
+  }
+  
+  }
+
+  @media screen and (min-width: 800px) {
+  
+  .search2 {
+    padding: 0.5rem 20% 0.5rem 0.2rem;
     
   }
 
+  
+  }
 
 `;

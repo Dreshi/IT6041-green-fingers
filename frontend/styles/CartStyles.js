@@ -20,6 +20,40 @@ export const CartStyle = styled(motion.div)`
     padding: 2rem 5rem;
     overflow-y: scroll;
     position: relative;
+
+    @media screen and (max-width: 699px) {
+        width:70%;
+        padding: 0rem 2rem;
+        h3 {
+            font-size: 1rem;
+            padding: 0.5rem 0;
+        }
+        div span {
+            margin: 0;
+        }
+     
+     }
+
+     @media screen and (min-width: 700px) and  (max-width: 1000px) {
+        width:60%;
+        padding: 0rem 2rem;
+        h3 {
+            font-size: 1rem;
+            padding: 0.5rem 0;
+        }
+        div span {
+            margin: 0;
+        }
+     
+     }
+
+     @media screen and (min-width: 1001px) and  (max-width: 1300px) {
+        width:60%;
+      
+     
+     }
+
+   
 `;
 
 export const Card = styled(motion.div)`
@@ -34,6 +68,17 @@ export const Card = styled(motion.div)`
     img {
         width: 8rem;
     }
+
+    @media screen and (max-width: 699px) {
+        display: flex;
+        padding: 0.5rem 1.2rem;
+        flex-direction: column;
+        img {
+            width: 10rem;
+        }
+
+     }
+   
 `;
 
 export const CardInfo = styled(motion.div)`
@@ -80,5 +125,7 @@ export const Checkout = styled(motion.div)`
 `;
 
 export const Cards = styled(motion.div)`
+
+
 
 `;
