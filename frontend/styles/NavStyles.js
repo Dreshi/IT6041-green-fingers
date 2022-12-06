@@ -9,6 +9,7 @@ export const NavStyles = styled.nav`
     a {
         font-size: 1.2rem;
     }
+}
 `;
 
 export const NavItems = styled.div`
@@ -28,8 +29,9 @@ export const NavItems = styled.div`
         padding: 0.25rem;
     }
     svg {
-        font-size: 2.3rem;
+        font-size:3rem;
         color: #5F7161;
+        margin: 5px 0px
     }
     span {
         background: #ff2626;
@@ -46,4 +48,59 @@ export const NavItems = styled.div`
         top: -20%;
         pointer-events: none;
     }
+
+    .loginImg {
+        width: 50px;
+        height: auto;
+        margin: 5px 0px
+
+     }
+
+     .greenlogo {
+        width:100%;
+        height:auto;
+     }
+   
+
+    @media screen and (max-width: 600px) {
+
+        .loginImg{
+            width: 40%;
+            height: auto;
+            margin: 20px 0 0 0
+         }
+       
+        svg {
+            font-size: 2rem;
+            margin: 10px 0 0 0
+        }
+
+        div {
+            margin: 1px; 
+            padding: 0px 2px;
+            align-items:flex-end;
+
+            
+           
+        }
+
+        h3 {
+            font-size: 0.8rem;
+            padding: 0;
+            margin: 3px 0 0px 0;
+            width: 90%;
+            text-align: end;
+        }
+
+        display: block;
+        align-items: center;
+       
+        
+      }
+
+      
+
+    
+
+      
 `;

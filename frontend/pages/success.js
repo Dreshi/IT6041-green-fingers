@@ -1,5 +1,9 @@
 import { useRouter } from "next/router";
 import styled from "styled-components";
+import logo from "../public/greenfingers.png";
+import Link from "next/link";
+import Image from "next/image";
+
 const { motion } = require("framer-motion");
 
 const stripe = require('stripe')(`${process.env.NEXT_PUBLIC_STRIPE_SECRET_KEY}`);
@@ -48,13 +52,20 @@ export default function Success( {order} ){
                     </OrderInfo>
                 </InfoWrapper>
                 <button onClick={() => route.push('/')}>Continue Shopping</button>
+                <Link href={"/"}><Image src={logo} alt="greenlogo" width={220}className="successgreenlogo" /></Link>
             </Card>
+           
         </Wrapper>
     )
 }
 
 const Wrapper = styled.div`
     margin: 5rem 15rem;
+    @media screen and (max-width: 1500px) {
+        margin: 5rem 1rem;
+        
+          
+        }
 `;
 
 const Card = styled(motion.div)`
@@ -76,6 +87,17 @@ const Card = styled(motion.div)`
         padding: 1rem 2rem;
         cursor: pointer;
     }
+
+    .successgreenlogo {
+        width: 250px;
+        height: auto
+    }
+
+    @media screen and (max-width: 899px) {
+        padding: 2rem;
+        
+          
+        }
 `;
 
 const Address = styled.div`
